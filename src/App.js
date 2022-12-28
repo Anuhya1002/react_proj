@@ -15,7 +15,7 @@ class App extends Component {
     return gotUser
   }
   render() {
-    if(this.state.user == undefined) {
+    if(this.state.user !== undefined) {
       if (this.state.user.isLoggedIn == true) {
         return (<Dashboard />);
       } else {
