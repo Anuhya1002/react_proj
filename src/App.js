@@ -15,12 +15,16 @@ class App extends Component {
     return gotUser
   }
   render() {
-    console.log(this.state.user.isLoggedIn)
-    if (this.state.user.isLoggedIn == true) {
-      return (<Dashboard />);
+    if(this.state.user == undefined) {
+      if (this.state.user.isLoggedIn == true) {
+        return (<Dashboard />);
+      } else {
+        return (<Login />);
+      }
     } else {
       return (<Login />);
     }
+
   }
 }
 
