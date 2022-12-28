@@ -1,10 +1,14 @@
 import mapboxgl from "mapbox-gl";
 import React, { Component } from "react";
-import "../../App.css";
+import "./dashboard.css";
+
 import "mapbox-gl/dist/mapbox-gl.css"
+import { useNavigate } from "react-router-dom";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoieWFzaW41NDk5MCIsImEiOiJjbGM3dnptNmYwM3JvM3BvMjVhYWxzZHB2In0.PAWijz529Uqet82VLTKPHA";
+
+
 
 export class Dashboard extends Component {
   constructor(props) {
@@ -26,6 +30,14 @@ export class Dashboard extends Component {
     });
   }
 
+  logout() {
+    alert("logout");
+    let navigate = useNavigate();
+    navigate("/login")
+  }
+
+
+
   render() {
     return (
       <div className="mainframe">
@@ -42,7 +54,7 @@ export class Dashboard extends Component {
               <p className="sideMenuItem">Releases</p>
             </div>
 
-            <button className="button primary">Logout</button>
+            <button onClick={this.logout}  className="button primary">Logout</button>
           </div>
           <div className="flex-item maincontent full-height">
             <div className="flex-column gap">

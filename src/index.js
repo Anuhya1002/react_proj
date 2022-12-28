@@ -21,6 +21,13 @@ const user = {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+        <Route path="login" element={<Login />}></Route>
+        <Route path="signup" element={<Signup />}></Route>
+        <Route path="dashboard" element={<Dashboard />}></Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

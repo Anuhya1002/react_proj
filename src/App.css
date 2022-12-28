@@ -1,275 +1,224 @@
-body,
-html,
-#root {
+body, html , #root{
   margin: 0px;
   height: 100%;
   width: 100%;
 }
 
-* {
-  font-family: "Poppins", sans-serif;
+*{
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
 .mainframe {
-  background-color: black;
-  height: 100%;
-  width: 100%;
+background-color: black;
+height: 100%;
+width: 100%;
 }
 
 .flex-row {
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .flex-item {
-  background-color: white;
-  height: 100%;
-  width: 100%;
+background-color: white;
+height: 100%;
+width: 100%;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .center-aligned {
-  align-items: center;
-  justify-content: center;
+align-items: center;
+justify-content: center;
 }
 
 .space-between {
-  justify-content: space-between;
-}
-.space-around {
-  justify-content: space-around;
+justify-content: space-between;
 }
 
 .flex-column-center-aligned {
-  justify-content: space-between;
-  align-items: center;
+justify-content: space-between;
+align-items: center;
 }
 
 .full-height {
-  height: 100%;
-  width: 100%;
+height: 100%;
+width: 100%;
 }
 
 .grey {
-  background-color: rgb(214, 214, 214);
+background-color: rgb(214, 214, 214);
 }
 
 .icon {
-  height: 38px;
-  width: 38px;
-  border-radius: 50%;
-  gap: 6px;
+height: 38px;
+width: 38px;
+border-radius: 50%;
+gap: 6px;
 }
 
 .icon2 {
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  gap: 6px;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+gap: 6px;
 }
 
 .icon3 {
-  height: 38px;
-  width: 38px;
-  border-radius: 50%;
-  gap: 6px;
-  border: 1px solid white;
+height: 38px;
+width: 38px;
+border-radius: 50%;
+gap: 6px;
+border: 1px solid white;
 }
 
 .image {
-  background-image: url("https://img.freepik.com/free-photo/portrait-happy-smiley-man_23-2149022623.jpg?w=1380&t=st=1672170773~exp=1672171373~hmac=68e85579e1ae2d7757b53a5c5e9504a4a2fd79329e4a87574b8e47d85dc0dc98");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+background-image: url("https://img.freepik.com/free-photo/satisfied-lovely-woman-holds-modern-cell-phone_273609-28232.jpg?w=1380&t=st=1672213157~exp=1672213757~hmac=5795f7e406475b77d4c3b3e0417fb4c61872d1e2ba3f4b308818cbcf42e5d9ba");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 
 .banner {
-  height: 64px;
-  width: 100%;
-  align-items: center;
-  justify-content: start;
-  gap: 12px;
+height: 64px;
+width: 100%;
+align-items: center;
+justify-content: start;
+gap: 12px;
+padding-left: 60px;
+}
+.h2 {
+font-weight: 400;
+margin: 0px;
+}
+
+.p-50 {
+padding: 60px;
+}
+.heading {
+color: white;
+font-size: 40px;
+margin: 0px;
+}
+
+.box {
+width: 450px;
+
+}
+
+.flexend {
+justify-content: flex-end;
+
+}
+
+.loginblock {
+  width: 85%;
+}
+
+.forgotPassword {
+margin: 0px;
+text-decoration: underline;
+font-weight: 500;
 }
 
 .p-12 {
-  padding: 12px;
+padding: 12px;
 }
 
 .blue {
-  background-color: blue;
+background-color: blue;
 }
 .button {
-  width: 450px;
-  height: 56px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background-color: black;
-  border: none;
-  font-weight: 400;
-  gap: 12px;
-  font-size: 16px;
+width: 450px;
+height: 56px;
+color: white;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+background-color: black;
+border: none;
+font-weight: 400;
+gap: 12px;
+font-size: 16px;
 }
 button:hover {
-  cursor: pointer;
-}
-
-.primary {
-  width: auto;
+cursor: pointer;
 }
 
 .google-btn {
-  background-color: transparent;
-  border: 1px solid rgb(212, 212, 212);
-  color: rgb(69, 69, 69);
+background-color: transparent;
+border: 1px solid rgb(0, 0, 0, 0.4);
+color: rgb(0, 0, 0, 0.7);
 }
 
 .g-12 {
-  gap: 32px;
+gap: 28px;
+}
+.bold {
+font-weight: bold;
 }
 
 .paragraph {
-  font-size: 14px;
-  color: grey;
-  font-weight: 300;
-  margin: 0px;
+font-size: 16px;
+color: rgba(0, 0, 0, 0.7);
+font-weight: 300;
+margin: 3px;
 }
 .gap {
-  gap: 22px;
+gap: 28px;
 }
 
 .divider {
-  height: 38px;
-  width: 450px;
-  gap: 12px;
+height: 38px;
+width: 350px;
+gap: 12px;
 }
 
 .border {
-  height: 1px;
-  background-color: rgb(212, 212, 212);
-  width: 50%;
+height: 1px;
+background-color: rgb(0, 0, 0, 0.4);
+width: 50%;
 }
 
 .form-field {
-  height: 48px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  border-bottom: 2px solid rgb(212, 212, 212);
-  width: 450px;
-  color: rgb(69, 69, 69);
-  font-size: 14px;
+height: 48px;
+border: none;
+outline: none;
+background-color: transparent;
+border-bottom:1.5px solid rgba(0, 0, 0, 0.4);
+width: 450px;
+color: rgb(0, 0, 0, 1);
+font-size: 14px;
 }
 
-h4 {
-  margin: 0px;
+.black {
+  color: #000;
+  font-weight: 500;
+  margin-left: 8px;
 }
 
+a {
+color: black;
+font-weight: 500;
+text-decoration: underline;
+}
 .linear {
-  background: rgb(22, 22, 22);
-  background: linear-gradient(
-    0deg,
-    rgba(22, 22, 22, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+background: rgb(22, 22, 22);
+background: linear-gradient(
+  0deg,
+  rgba(22, 22, 22, 1) 0%,
+  rgba(0, 0, 0, 0) 100%
+);
 }
 
 .p {
-  color: white;
-  margin: 0px;
-  font-size: 14px;
-}
-
-.sidemenu {
-  width: 14%;
-  padding: 24px;
-  border-right: 1px solid #e4e4e4;
-  justify-content: space-around;
-}
-
-.sideMenuItem {
-  width: 80%;
-  padding: 16px;
-  border-radius: 8px;
-  color: #1b3444;
-  margin: 0px;
-}
-
-.active {
-  background-color: #f3f6f8;
-}
-
-.maincontent {
-}
-
-.outline {
-  background-color: transparent;
-  border: 1px solid rgb(0, 0, 0, 0.3);
-  border-radius: 8px;
-  color: black;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.avatar {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("https://img.freepik.com/free-photo/appealing-young-woman-sparkle-sunglasses-looking-distance-portrait-glamorous-european-model-with-short-haircut-smiling_197531-20541.jpg?t=st=1672241839~exp=1672242439~hmac=73909f6210fb017aa76176831c094845f4282841f97e4872286d32394bc2e8df");
-}
-
-.navbar {
-}
-.p-lr {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.p-ub {
-  padding-top: 20px;
-}
-
-.borderbox {
-  border: 1px solid #e4e4e4;
-  border-radius: 8px;
-  width: 20%;
-  padding: 24px;
-}
-
-.bordercard {
-  border: 1px solid #e4e4e4;
-  border-radius: 8px;
-  height: 600px;
-}
-
-.h1 {
-  font-size: 50px;
-  margin: 0px;
-}
-
-.green {
-  color: green;
-}
-.label {
-  font-size: 16px;
-}
-.red {
-  color: red;
-}
-
-.map-container {
-  border: 1px solid #e4e4e4;
-  border-radius: 8px;
-  height: 600px;
+color: white;
+margin: 0px;
+font-size: 14px;
 }

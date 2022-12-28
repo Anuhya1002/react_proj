@@ -12,6 +12,8 @@ export class Login extends Component {
   emailChange = (value) => this.setState({ email: value });
   passwordChange = (value) => this.setState({ password: value });
 
+   navigate = () => useNavigate('/dashboard');
+
   onSubmit() {
     const user = JSON.parse(localStorage.getItem("user"));
     if (user != undefined) {
@@ -27,7 +29,7 @@ export class Login extends Component {
             isLoggedIn: true,
           })
         );
-        this.useNavigate("/dashboard");
+        this.navigate();
       } else {
         alert("Login Credentials Invalid, Please Try Again");
       }
@@ -104,14 +106,16 @@ export class Login extends Component {
 
               <p className="paragraph">
                 Dont have an account ?
-                <a > Signup for free</a>
+                <Link to={'/signup'} > Signup for free</Link>
               </p>
+
+                <Link to={'/dashboard'} >skip to dashboard</Link>
             </div>
           </div>
           <div className="flex-item grey image full-height">
             <div className="flex-column full-height flexend linear gap">
               <div className="flex-column gap p-50 flexend">
-                <h1 className="h1">
+                <h1 className="heading">
                   " We move 10x faster than our peers and stay consistent. While
                   they are bogged down with design debt. we are releasing new
                   features. "
@@ -119,7 +123,7 @@ export class Login extends Component {
                 <div className="border"></div>
                 <div className="flex-row center-aligned space-between">
                   <div className="flex-column">
-                    <h1 className="h1">Sophie Hall</h1>
+                    <h1 className="heading">Sophie Hall</h1>
                     <p className="p">(Founder, Catalog)</p>
                     <p className="p">Web-design Agency</p>
                   </div>

@@ -70,7 +70,7 @@ export class Signup extends Component {
          
 
               <p className="paragraph">
-                Already have an account ? <a >Login Now</a>
+                Already have an account ? <Link to={'/login'} >Login Now</Link>
               </p>
             </div>
           </div>
